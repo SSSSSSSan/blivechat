@@ -7,7 +7,7 @@
     <ticker class="style-scope yt-live-chat-renderer" :messages="paidMessages" :showGiftInfo="showGiftInfo"></ticker>
     <yt-live-chat-item-list-renderer class="style-scope yt-live-chat-renderer" allow-scroll>
       <div ref="scroller" id="item-scroller" class="style-scope yt-live-chat-item-list-renderer animated" @scroll="onScroll">
-        <div ref="itemOffset" id="item-offset" class="style-scope yt-live-chat-item-list-renderer" style="height: 0px;"
+        <div ref="itemOffset" id="item-offset" class="style-scope yt-live-chat-item-list-renderer" style="height: 100vh;"
           :style="`${(this.randomXOffset || this.randomYOffset) ? 'overflow: visible;' : 'overflow: hidden; position: relative;'}`"
         >
           <div ref="items" id="items" class="style-scope yt-live-chat-item-list-renderer" style=""
